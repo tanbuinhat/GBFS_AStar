@@ -1,6 +1,9 @@
 # GBFS_AStar
 
 
+This code is my homework in University of Science in Ho Chi Minh City (VietNam)
+
+
 * Based on the graph with given weight, find the shortest path according to the corresponding algorithm from start to finish vertex.
 
 * The results returned by each algorithm are as follows
