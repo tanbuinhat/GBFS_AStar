@@ -35,7 +35,7 @@ class Graph:
          
 
     # function to be implemented
-    def A_star(self, s, g, h): # em có tham khảo code tại đây https://github.com/vandersonmr/A_Star_Algorithm/blob/master/libs/python/AStar.py
+    def A_star(self, s, g, h): 
         open_list = []
         closed_list = []
         open_list.append(s)
@@ -43,18 +43,18 @@ class Graph:
         parents = {}
         parents[s] = None
 
-        cost_path_to_current = {}  #lưu giá trị cost từ đầu tới hiện tại
+        cost_path_to_current = {}  #save cost from begin to current
         f_cost = {}    
         cost_path_to_current[s] = 0
         f_cost[s] = cost_path_to_current[s] + h[s][0]
-        cost_path_list = []      # lưu giá trị cost
+        cost_path_list = []      # list save all the cost
 
         while open_list:
             current = self.getLowest(open_list,f_cost)
 
             if current == g:
                 # path = self.reconstructPath(parents,g)
-                return cost_path_list[-1] # giá trị cuối cùng là cost từ node đầu tới cuối ko tính heuristic
+                return cost_path_list[-1] 
 
             open_list.remove(current)           
             closed_list.append(current)   

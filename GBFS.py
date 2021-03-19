@@ -44,7 +44,7 @@ class Graph:
 
 
     # function to be implemented
-    def GBFS(self, s, g, h):  # em có tham khảo code tại đây https://github.com/vandersonmr/A_Star_Algorithm/blob/master/libs/python/AStar.py
+    def GBFS(self, s, g, h):  
         open_list = []
         closed_list = []
         open_list.append(s)
